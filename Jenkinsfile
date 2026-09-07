@@ -33,7 +33,7 @@ pipeline {
         stage('Deploy to Netlify') {
             steps {
 
-                sh 'npx netlify-cli deploy --dir=dist/caro-online --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod'
+                sh 'npx netlify-cli deploy --dir=dist/caro-online/browser --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod'
             }
         }
     }
